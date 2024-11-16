@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::section})}">
+<head>
+	<meta charset="ISO-8859-1">
+<title>EasyMart</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body>
+
+	<section>
+
+		<!-- Start Slider  -->
+		<div id="carouselExample" class="carousel slide"  data-bs-ride="carousel" data-bs-interval="3000">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://www.ethnicplus.in/media/mageplaza/bannerslider/banner/image/1/0/10_15.jpg" class="d-block w-100 object-fit-cover overflow-hidden" alt="..."
+						>
+				</div>
+				<div class="carousel-item">
+						<img src="https://www.ethnicplus.in/media/mageplaza/bannerslider/banner/image/1/_/1_16.jpg" class="d-block w-100
+						object-fit-cover overflow-hidden" alt="..."
+						>
+				</div>
+				<div class="carousel-item">
+					<img src="https://www.ethnicplus.in/media/mageplaza/bannerslider/banner/image/9/_/9_8.jpg"  class="d-block w-100 object-fit-cover overflow-hidden"  alt="..."
+						>
+				</div>
+			</div>
+       
+			<!-- Carousel Controls -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" 
+			style="position: absolute; top: 50%; left: 32px; transform: translateY(-60%); width: 50px; height: 50px; border: 2px solid black; border-radius: 50%;">
+			<span class="carousel-control-prev-icon" style="filter: invert(1);" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+	</button>
+	
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" 
+			style="position: absolute; top: 50%; right: 32px; transform: translateY(-60%); width: 50px; height: 50px; border: 2px solid black; border-radius: 50%; ">
+			<span class="carousel-control-next-icon" style="filter: invert(1);" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+	</button>
+		</div>
+		<!-- End Slider  -->
+
+		<div class="pagebuilder-column-group">
+			<!-- Left Banner -->
+			<div class="pagebuilder-column middle_home_column_left">
+					<div class="home_page_banner_section">
+							<a href="https://www.ethnicplus.in/lehenga-choli" target="_blank">
+									<div class="banner-wrapper">
+											<img src="https://www.ethnicplus.in/media/wysiwyg/11-25-21-10-5.jpg" alt="Lehenga Choli">
+											<div class="overlay">
+													<div class="poster-content">Party Wear Saree</div>
+											</div>
+									</div>
+							</a>
+					</div>
+			</div>
+
+			<!-- Right Banner -->
+			<div class="pagebuilder-column middle_home_column_right">
+					<div class="home_page_banner_sec">
+							<a href="https://www.ethnicplus.in/sarees/party-wear-saree" target="_blank">
+									<div class="banner-wrapper">
+											<img src="https://www.ethnicplus.in/media/wysiwyg/11-25-21-10-6.jpg" alt="Party Wear Saree">
+											<div class="overlay">
+													<div class="poster-content">Lehenga Choli</div>
+											</div>
+									</div>
+							</a>
+					</div>
+			</div>
+	</div>
+
+		<!--< Start Category Module -->
+		<div class="container py-5 ">
+			<h2 class="text-center fs-3 font-weight:bold text-dark mb-4 " style="font-family: 'Georgia', serif; ">Categories</h2>
+			<div style="display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; align-items: stretch; border-width: 0px; min-height: 0px; min-width: 0px; position: relative; z-index: 0; box-sizing: border-box;">
+			<!---- sub heading-->
+				<div style="display: flex; flex: 1 1 0%; flex-direction: row; align-items: center; border-width: 0px; min-height: 0px; min-width: 0px; position: relative; z-index: 0; box-sizing: border-box;">
+			
+					<div style="display: flex; flex: 1 1 0%; flex-direction: column; align-items: stretch; border-width: 0px; min-height: 0px; min-width: 0px; position: relative; z-index: 0; box-sizing: border-box; justify-content: center;">
+			
+						<div style="text-align: center; padding: 20px 0;">
+							<div style="display: inline-block; width: 100%; position: relative; text-align: center;">
+									<div style="border-top: 2px solid #ccc; width: 40%; position: absolute; top: 50%; left: 0; transform: translateY(-50%);"></div>
+									
+									<div style="color: rgb(33, 33, 33); font-size: 28px; font-weight: 600; display: inline-block; padding: 0 15px; background-color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+											Best of Lahenga
+									</div>
+									
+									<div style="border-top: 2px solid #ccc; width: 40%; position: absolute; top: 50%; right: 0; transform: translateY(-50%);"></div>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			
+					<!-- Product Cards Row Dynamically Rendered Product Cards  -->
+
+				<!-- <div class="container py-5 position-relative" style="overflow-x: hidden; min-width: 1340px;">  -->
+						<!-- Left Carousel Button -->
+					 <!-- <button class="carousel-control-prev position-absolute start-0" type="button" onclick="scrollCarousel(-2)">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+						</button>   -->
+						<!-- Carousel Container -->
+						<!-- <div class="d-flex overflow-hidden" id="productCarousel" style="white-space: nowrap; transition: transform 0.5s ease;"> -->
+								
+							 <div th:each="c : ${category}" class="mx-2 text-center" style="width: 250px;">
+										<div class="card shadow-sm" style="width: 250px; height: 400px; overflow: hidden;">
+												<img th:src="@{'img/category_img/' + ${c.imageName}}" 
+														 loading="lazy" 
+														 class="product-img" 
+														 alt="Category Image"
+														 style="width: 100%; height: 100%; object-fit: cover;">
+										</div>
+										<div class="product-item-details mt-2">
+												<strong class="product-item-name">
+														<a th:href="@{'/products?category=' + ${c.name}}" 
+															 class="product-item-link text-dark text-decoration-none fs-6" 
+															 style="white-space: normal; overflow: hidden; display: block; text-align: left; font-family: 'Georgia', serif; font-weight: normal; font-size: 1rem;">
+															 [[${c.name}]]
+														</a>
+												</strong> 
+												 <!-- <div class="price-box price-final_price" style="text-align: left;">
+														<span class="price" th:text="'₹' + ${c.price}">₹999.00</span>
+												</div>  -->
+										 <!-- </div>
+								</div>
+						 </div>   -->
+				
+						<!-- Right Carousel Button -->
+						  <!-- <button class="carousel-control-next position-absolute end-0" type="button" onclick="scrollCarousel(2)">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+						</button> 
+				</div>   -->
+			</div>
+	</div>
+	
+	
+			<!-- dumy  product list-->
+	<!-- Product Cards Row -->
+	<div class="container py-5 position-relative " style="overflow-x: hidden;">
+		<button class="carousel-control-prev position-absolute start-0" type="button" onclick="scrollCarousel(-2)">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+	</button>
+			<div class="d-flex overflow-hidden" id="productCarousel" style="white-space: nowrap; transition: transform 0.5s ease;">
+								<!-- Product Card 1 -->
+								 <div class="mx-2 text-center" style="width: 250px;">
+									<div class="card shadow-sm" style="width: 250px; height: 400px; overflow: hidden;">
+											<img src="https://www.ethnicplus.in/media/catalog/product/cache/77b9a44d9276879ccdde931a01149182/k/a/kat-1070prl_2_.jpg" 
+													 loading="lazy" 
+													 class="product-img" 
+													 alt="Category Image"
+													 style="width: 100%; height: 100%; object-fit: cover; ">
+									</div>
+									<div class="product-item-details mt-2">
+											<strong class="product-item-name">
+													<a th:href="@{'/products?category='}" 
+														 class="product-item-link text-dark text-decoration-none fs-6" 
+														 style="white-space: normal; overflow: hidden; display: block; text-align: left;  font-family: 'Georgia', serif; font-weight: normal; font-size: 1rem; ">
+														 Peach Thread Embroidered Net Party Wear Lehenga Choli
+													</a>
+											</strong>
+											<div class="price-box price-final_price " style=" text-align: left;">
+													<span class="price">₹999.00</span>
+											</div>
+									</div>
+							</div> 
+								<!-- Product Card 2 -->
+								 <div class="mx-2 text-center" style="width: 250px;">
+										<div class="card shadow-sm" style="width: 250px; height: 400px; overflow: hidden;">
+												<img src="https://www.ethnicplus.in/media/catalog/product/cache/1d5df636cf8c8988ea2d2c570bb7c21d/7/3/7315_1_.jpg" 
+														 loading="lazy" 
+														 class="product-img" 
+														 alt="Category Image"
+														 style="width: 100%; height: 100%; object-fit: cover; ">
+										</div>
+										<div class="product-item-details mt-2">
+												<strong class="product-item-name">
+													<a th:href="@{'/products?category='}" 
+															 class="product-item-link text-dark text-decoration-none fs-6" 
+															 style="white-space: normal; overflow: hidden; display: block; text-align: left;  font-family: 'Georgia', serif; font-weight: normal; font-size: 1rem; ">
+															 Peach Thread Embroidered Net Party Wear Lehenga Choli
+														</a>
+												</strong>
+												<div class="price-box price-final_price" style=" text-align: left;">
+														<span class="price">₹2,999.00</span>
+												</div>
+										</div>
+								</div>
+								<!-- product card3 -->
+	
+								 <div class="mx-2 text-center" style="width: 250px;">
+									<div class="card shadow-sm" style="width: 250px; height: 400px; overflow: hidden;">
+											<img src="https://www.ethnicplus.in/media/catalog/product/cache/1d5df636cf8c8988ea2d2c570bb7c21d/w/h/whatsapp_image_2022-02-14_at_2.28.33_pm.jpg" 
+													 loading="lazy" 
+													 class="product-img" 
+													 alt="Category Image"
+													 style="width: 100%; height: 100%; object-fit: cover; ">
+									</div>
+									<div class="product-item-details mt-2">
+											<strong class="product-item-name">
+												<a th:href="@{'/products?category='}" 
+														 class="product-item-link text-dark text-decoration-none fs-6" 
+														 style="white-space: normal; overflow: hidden; display: block; text-align: left;  font-family: 'Georgia', serif; font-weight: normal; font-size: 1rem; ">
+														 Attractive Pink Printed Georgette Silk Party Wear 
+													</a>
+											</strong>
+											<div class="price-box price-final_price" style=" text-align: left;">
+													<span class="price">₹3,999.00</span>
+											</div>
+									</div>
+							</div> 
+	
+							<!-- product card4 -->
+	
+							 <div class="mx-2 text-center" style="width: 250px;">
+								<div class="card shadow-sm" style="width: 250px; height: 400px; overflow: hidden;">
+										<img src="https://www.ethnicplus.in/media/catalog/product/cache/77b9a44d9276879ccdde931a01149182/h/m/hm_p10_reference_image_.jpeg" 
+												 loading="lazy" 
+												 class="product-img" 
+												 alt="Category Image"
+												 style="width: 100%; height: 100%; object-fit: cover; ">
+								</div>
+								<div class="product-item-details mt-2">
+										<strong class="product-item-name">
+											<a th:href="@{'/products?category='}" 
+													 class="product-item-link text-dark text-decoration-none fs-6" 
+													 style="white-space: normal; overflow: hidden; display: block; text-align: left;  font-family: 'Georgia', serif; font-weight: normal; font-size: 1rem; ">
+													 Red Sequins Work Silk Wedding Wear
+												</a>
+										</strong>
+										<div class="price-box price-final_price" style="text-align: left;">
+												<span class="price">₹1,999.00</span>
+										</div>
+								</div>
+						</div> 
+	
+						<!-- product card5 -->
+						 <div class="mx-2 text-center" style="width: 250px;">
+							<div class="card shadow-sm" style="width: 250px; height: 400px; overflow: hidden;">
+									<img src="https://www.ethnicplus.in/media/catalog/product/cache/1d5df636cf8c8988ea2d2c570bb7c21d/s/a/sabyasachi_organza_lehenga_white.jpg" 
+											 loading="lazy" 
+											 class="product-img" 
+											 alt="Category Image"
+											 style="width: 100%; height: 100%; object-fit: cover; ">
+							</div>
+							<div class="product-item-details mt-2">
+									<strong class="product-item-name">
+										<a th:href="@{'/products?category='}" 
+												 class="product-item-link text-dark text-decoration-none fs-6" 
+												 style="white-space: normal; overflow: hidden; display: block; text-align: left;  font-family: 'Georgia', serif; font-weight: normal; font-size: 1rem; ">
+												 Peach Thread Embroidered Net Party Wear Lehenga Choli
+											</a>
+									</strong>
+									<div class="price-box price-final_price" style=" text-align: left;">
+											<span class="price">₹2,999.00</span>
+									</div>
+							</div>
+					</div> 
+					<!-- product card6 -->
+					 <div class="mx-2 text-center" style="width: 250px;">
+						<div class="card shadow-sm" style="width: 250px; height: 400px; overflow: hidden;">
+								<img src="https://www.ethnicplus.in/media/catalog/product/cache/1d5df636cf8c8988ea2d2c570bb7c21d/l/n/lnb-1017pec_4_.jpg" 
+										 loading="lazy" 
+										 class="product-img" 
+										 alt="Category Image"
+										 style="width: 100%; height: 100%; object-fit: cover; ">
+						</div>
+						<div class="product-item-details mt-2">
+								<strong class="product-item-name">
+									<a th:href="@{'/products?category='}" 
+											 class="product-item-link text-dark text-decoration-none fs-6" 
+											 style="white-space: normal; overflow: hidden; display: block; text-align: left;  font-family: 'Georgia', serif; font-weight: normal; font-size: 1rem; ">
+											 Amazing Peach Kalamkari Printed Dola Silk Festival Wear 
+										</a>
+								</strong>
+								<div class="price-box price-final_price" style=" text-align: left;">
+										<span class="price">₹999.00</span>
+								</div>
+						</div>
+				</div>
+				
+					<!-- product card 7-->
+				<div class="mx-2 text-center" style="width: 250px;">
+					<div class="card shadow-sm" style="width: 250px; height: 400px; overflow: hidden;">
+							<img src="https://www.ethnicplus.in/media/catalog/product/cache/1d5df636cf8c8988ea2d2c570bb7c21d/z/c/zcl-7002pnk_5_.jpg" 
+									 loading="lazy" 
+									 class="product-img" 
+									 alt="Category Image"
+									 style="width: 100%; height: 100%; object-fit: cover; ">
+					</div>
+					<div class="product-item-details mt-2">
+							<strong class="product-item-name">
+								<a th:href="@{'/products?category='}" 
+										 class="product-item-link text-dark text-decoration-none fs-6" 
+										 style="white-space: normal; overflow: hidden; display: block; text-align: left;  font-family: 'Georgia', serif; font-weight: normal; font-size: 1rem; ">
+										 Pink Rose Digital Floral Print Silk Lehenga Choli
+									</a>
+							</strong>
+							<div class="price-box price-final_price" style=" text-align: left;">
+									<span class="price">₹1,999.00</span>
+							</div>
+					</div>
+			</div>
+</div>
+				
+					
+						<!-- Carousel Controls -->
+		<button class="carousel-control-next position-absolute end-0" type="button" onclick="scrollCarousel(2)">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+		</button>
+				</div>	
+			</div>
+
+
+		<!-- Start Latest Product Module -->
+		<div style="display: flex; flex: 1 1 0%; flex-direction: row; align-items: center; border-width: 0px; min-height: 0px; min-width: 0px; position: relative; z-index: 0; box-sizing: border-box;">
+			
+			<div style="display: flex; flex: 1 1 0%; flex-direction: column; align-items: stretch; border-width: 0px; min-height: 0px; min-width: 0px; position: relative; z-index: 0; box-sizing: border-box; justify-content: center;">
+	
+				<div style="text-align: center; padding: 20px 0;">
+					<div style="display: inline-block; width: 100%; position: relative; text-align: center;">
+							<div style="border-top: 2px solid #ccc; width: 40%; position: absolute; top: 50%; left: 0; transform: translateY(-50%);"></div>
+							
+							<div style="color: rgb(33, 33, 33); font-size: 28px; font-weight: 600; display: inline-block; padding: 0 15px; background-color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+									Latest Product
+							</div>
+							
+							<div style="border-top: 2px solid #ccc; width: 40%; position: absolute; top: 50%; right: 0; transform: translateY(-50%);"></div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- Dynamic Latest Product -->
+	<div class="d-flex overflow-hidden" id="productCarousel" style="white-space: nowrap; transition: transform 0.5s ease;">
+		<div class="mx-2 text-center" th:each="p:${products}" style="width: 250px;">
+				<div class="card shadow-sm" style="width: 250px; height: 400px; overflow: hidden;">
+					<img th:src="@{'img/product_img/'+${p.image}}" 
+							 loading="lazy" 
+							 alt="Product Image" 
+							 class="product-img" 
+							 style="width: 100%; height: 100%; object-fit: cover;">
+			</div>
+			<div class="product-item-details mt-2">
+				<!-- Product Title -->
+				<strong class="product-item-name">
+						<a th:href="@{'/product/'+${p.id}}" 
+							 class="product-item-link text-dark text-decoration-none fs-6" 
+							 style="white-space: normal; overflow: hidden; display: block; text-align: left; font-family: 'Georgia', serif; font-weight: normal; font-size: 1rem;">
+							 [[${p.title}]]
+						</a>
+				</strong>
+				<!-- Price -->
+				<div class="price-box price-final_price" style="text-align: left;">
+						<span class="price">₹[[${p.price}]]</span>
+				</div>
+		</div>
+		
+		
+
+					</div>
+				</div> 
+			</div>
+		</div>
+	</section>
+	
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</html>

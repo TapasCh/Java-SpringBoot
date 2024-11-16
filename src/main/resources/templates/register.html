@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::section})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>EasyMart</title>
+</head>
+<body>
+	<section>
+		<div class="registration-container">
+			<div class="registration-card">
+				<h3>Register</h3>
+	
+				<!-- Success Message -->
+				<div th:if="${session.succMsg}" class="alert alert-success text-center">
+					<p class="fw-bold">[[${session.succMsg}]]</p>
+					<th:block th:text="${@commnServiceImpl.removeSessionMessage()}"></th:block>
+				</div>
+	
+				<!-- Error Message -->
+				<div th:if="${session.errorMsg}" class="alert alert-danger text-center">
+					<p class="fw-bold">[[${session.errorMsg}]]</p>
+					<th:block th:text="${@commnServiceImpl.removeSessionMessage()}"></th:block>
+				</div>
+	
+				<form action="/saveUser" enctype="multipart/form-data" id="userRegister" method="post" novalidate>
+					<!-- Full Name & Mobile Number -->
+					<div class="row">
+						<div class="col">
+							<label class="form-label">Full Name</label>
+							<input class="form-control" name="name" type="text" required>
+						</div>
+						<div class="col">
+							<label class="form-label">Mobile Number</label>
+							<input class="form-control" name="mobileNumber" type="number" required>
+						</div>
+					</div>
+	
+					<!-- Email -->
+					<div class="mb-3">
+						<label class="form-label">Email</label>
+						<input class="form-control" name="email" type="email" required>
+					</div>
+	
+					<!-- Address, City, State, Pincode -->
+					<div class="row">
+						<div class="col">
+							<label class="form-label">Address</label>
+							<input class="form-control" name="address" type="text" required>
+						</div>
+						<div class="col">
+							<label class="form-label">City</label>
+							<input class="form-control" name="city" type="text" required>
+						</div>
+					</div>
+	
+					<div class="row">
+						<div class="col">
+							<label class="form-label">State</label>
+							<input class="form-control" name="state" type="text" required>
+						</div>
+						<div class="col">
+							<label class="form-label">Pincode</label>
+							<input class="form-control" name="pincode" type="number" required>
+						</div>
+					</div>
+	
+					<!-- Password & Confirm Password -->
+					<div class="row">
+						<div class="col">
+							<label class="form-label">Password</label>
+							<input class="form-control" name="password" type="password" id="pass" required>
+						</div>
+						<div class="col">
+							<label class="form-label">Confirm Password</label>
+							<input class="form-control" name="confirmpassword" type="password" required>
+						</div>
+					</div>
+	
+					<!-- Profile Image -->
+					<div class="mb-3">
+						<label class="form-label">Profile Image</label>
+						<input class="form-control" name="img" type="file">
+					</div>
+	
+					<!-- Register Button -->
+					<button type="submit" class="btn text-white col-md-12">Register</button>
+				</form>
+	
+				<div class="links">
+					Already have an account? <a href="/signin">Login</a>
+				</div>
+			</div>
+		</div>
+	
+
+	</section>
+</body>
+</html>
