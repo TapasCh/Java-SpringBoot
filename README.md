@@ -58,8 +58,7 @@ This is a fully functional **E-Commerce Website** built using **Java Spring Boot
 ## Installation and Setup  
 
 1. Clone the repository:  
-   ```bash  
- git clone https://github.com/your-username/e-commerce-website.git  
+ git clone https://github.com/TapasCh/Java-SpringBoot.git  
    cd e-commerce-website
 
  2. Configure the database in application.properties:
