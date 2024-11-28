@@ -77,8 +77,18 @@ This is a fully functional **E-Commerce Website** built using **Java Spring Boot
       http://localhost:8080
 
 
+![Screenshot (64)](https://github.com/user-attachments/assets/0dc5dfd8-d8a1-4e92-b805-0cfb4f8a1a4b)
+![Screenshot (65)](https://github.com/user-attachments/assets/25f5bc09-76c6-4841-92d6-8665f7c6285a)
 ![Screenshot 1](https://github.com/user-attachments/assets/f40f7b82-d976-4188-b3d5-23c779df32c5)
-
+![s1](https://github.com/user-attachments/assets/24f4b956-a7c9-4c6c-86aa-9ebabc3c5ab2)
+![s2](https://github.com/user-attachments/assets/868e95c9-1151-4638-8f32-1d8d413b0d8e)
+![Screenshot (71)](https://github.com/user-attachments/assets/aede4981-6810-4afc-a05a-11c76b8e0875)
+![Screenshot (72)](https://github.com/user-attachments/assets/d7a9cce0-d32a-4175-a730-d1bcede82444)
+![Screenshot (66)](https://github.com/user-attachments/assets/ca11c0ba-26b8-48fd-b0c5-3bcf2f40ac13)
+![Screenshot (67)](https://github.com/user-attachments/assets/58514e0a-354a-4621-a064-cf737d4f97b6)
+![Screenshot (68)](https://github.com/user-attachments/assets/fc71ca6a-6911-4eb2-879a-a95df0e1ca92)
+![Screenshot (69)](https://github.com/user-attachments/assets/82a84893-fcc3-4485-af33-edad638211c0)
+![Screenshot (70)](https://github.com/user-attachments/assets/6c42a189-9490-495c-b2b5-ccaeff4e2a40)
    
 
 
